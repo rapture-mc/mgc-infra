@@ -1,5 +1,5 @@
 # Artifacts built with Nix
-result/
+result
 
 # Terraform
 **/.terraform/*
