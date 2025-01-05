@@ -1,7 +1,7 @@
 {vars, ...}: {
   terraform.required_providers.libvirt.source = "dmacvicar/libvirt";
 
-  provider.libvirt.uri = "qemu+ssh://deploy@${vars.networking.hostsAddr.MGC-HVS-03.ipv4}/system";
+  provider.libvirt.uri = "qemu+ssh://deploy@${vars.networking.hostsAddr.MGC-DRW-HVS01.ipv4}/system";
 
   module = {
     reverse-proxy = {

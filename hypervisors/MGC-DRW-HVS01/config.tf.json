@@ -1,5 +1,27 @@
 {
   "module": {
+    "bastion-server": {
+      "autostart": true,
+      "bridge": "br0",
+      "dhcp": true,
+      "memory": "4096",
+      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "system_volume": 300,
+      "vcpu": 2,
+      "vm_count": 1,
+      "vm_hostname_prefix": "MGC-DRW-BST"
+    },
+    "controller-server": {
+      "autostart": true,
+      "bridge": "br0",
+      "dhcp": true,
+      "memory": "4096",
+      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "system_volume": 300,
+      "vcpu": 2,
+      "vm_count": 1,
+      "vm_hostname_prefix": "MGC-DRW-CTR"
+    },
     "guacamole-server": {
       "autostart": true,
       "bridge": "br0",
@@ -22,7 +44,7 @@
       "vm_count": 1,
       "vm_hostname_prefix": "MGC-DRW-HDS"
     },
-    "password-store": {
+    "password-server": {
       "autostart": true,
       "bridge": "br0",
       "dhcp": true,
@@ -32,6 +54,17 @@
       "vcpu": 2,
       "vm_count": 1,
       "vm_hostname_prefix": "MGC-DRW-PWS"
+    },
+    "restic-server": {
+      "autostart": true,
+      "bridge": "br0",
+      "dhcp": true,
+      "memory": "4096",
+      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "system_volume": 300,
+      "vcpu": 2,
+      "vm_count": 1,
+      "vm_hostname_prefix": "MGC-DRW-RST"
     },
     "reverse-proxy": {
       "autostart": true,

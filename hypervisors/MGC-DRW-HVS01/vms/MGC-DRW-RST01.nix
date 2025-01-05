@@ -1,12 +1,12 @@
 {vars, ...}: {
   terraform.required_providers.libvirt.source = "dmacvicar/libvirt";
 
-  provider.libvirt.uri = "qemu+ssh://deploy@${vars.networking.hostsAddr.MGC-HVS-03.ipv4}/system";
+  provider.libvirt.uri = "qemu+ssh://deploy@${vars.networking.hostsAddr.MGC-DRW-HVS01.ipv4}/system";
 
   module = {
-    guacamole-server = {
+    restic-server = {
       source = "${vars.moduleSource}";
-      vm_hostname_prefix = "MGC-DRW-GUC";
+      vm_hostname_prefix = "MGC-DRW-RST";
       autostart = true;
       vm_count = 1;
       memory = "4096";
