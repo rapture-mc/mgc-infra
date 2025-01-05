@@ -1,3 +1,6 @@
+# Artifacts built with Nix
+result/
+
 # Terraform
 **/.terraform/*
 *.tfstate
