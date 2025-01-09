@@ -5,7 +5,7 @@
       "bridge": "br0",
       "dhcp": true,
       "memory": "4096",
-      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
       "system_volume": 300,
       "vcpu": 2,
       "vm_count": 1,
@@ -16,7 +16,7 @@
       "bridge": "br0",
       "dhcp": true,
       "memory": "4096",
-      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
       "system_volume": 300,
       "vcpu": 2,
       "vm_count": 1,
@@ -27,7 +27,7 @@
       "bridge": "br0",
       "dhcp": true,
       "memory": "4096",
-      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
       "system_volume": 300,
       "vcpu": 2,
       "vm_count": 1,
@@ -38,7 +38,7 @@
       "bridge": "br0",
       "dhcp": true,
       "memory": "4096",
-      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
       "system_volume": 300,
       "vcpu": 2,
       "vm_count": 1,
@@ -49,7 +49,7 @@
       "bridge": "br0",
       "dhcp": true,
       "memory": "4096",
-      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
       "system_volume": 300,
       "vcpu": 2,
       "vm_count": 1,
@@ -60,7 +60,7 @@
       "bridge": "br0",
       "dhcp": true,
       "memory": "4096",
-      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
       "system_volume": 300,
       "vcpu": 2,
       "vm_count": 1,
@@ -71,7 +71,7 @@
       "bridge": "br0",
       "dhcp": true,
       "memory": "4096",
-      "source": "git::https://gitea.megacorp.industries/megacorp/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
       "system_volume": 300,
       "vcpu": 2,
       "vm_count": 1,
@@ -80,7 +80,7 @@
   },
   "provider": {
     "libvirt": {
-      "uri": "qemu+ssh://deploy@192.168.1.17/system"
+      "uri": "qemu+ssh://controller@192.168.1.17/system"
     }
   },
   "terraform": {
