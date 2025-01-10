@@ -13,7 +13,7 @@
     modules = [
       (import ./vms/MGC-DRW-BST01.nix {inherit vars;})
       (import ./vms/MGC-DRW-CTR01.nix {inherit vars;})
-      (import ./vms/MGC-DRW-HDS01.nix {inherit vars;})
+      (import ./vms/MGC-DRW-VPN01.nix {inherit vars;})
       (import ./vms/MGC-DRW-GUC01.nix {inherit vars;})
       (import ./vms/MGC-DRW-PWS01.nix {inherit vars;})
       (import ./vms/MGC-DRW-RST01.nix {inherit vars;})

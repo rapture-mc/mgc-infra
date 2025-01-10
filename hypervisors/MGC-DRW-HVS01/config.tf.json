@@ -33,17 +33,6 @@
       "vm_count": 1,
       "vm_hostname_prefix": "MGC-DRW-GUC"
     },
-    "headscale-server": {
-      "autostart": true,
-      "bridge": "br0",
-      "dhcp": true,
-      "memory": "4096",
-      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
-      "system_volume": 300,
-      "vcpu": 2,
-      "vm_count": 1,
-      "vm_hostname_prefix": "MGC-DRW-HDS"
-    },
     "password-server": {
       "autostart": true,
       "bridge": "br0",
@@ -76,11 +65,22 @@
       "vcpu": 2,
       "vm_count": 1,
       "vm_hostname_prefix": "MGC-DRW-RVP"
+    },
+    "vpn-server": {
+      "autostart": true,
+      "bridge": "br0",
+      "dhcp": true,
+      "memory": "4096",
+      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "system_volume": 300,
+      "vcpu": 2,
+      "vm_count": 1,
+      "vm_hostname_prefix": "MGC-DRW-VPN"
     }
   },
   "provider": {
     "libvirt": {
-      "uri": "qemu+ssh://controller@192.168.1.17/system"
+      "uri": "qemu:///system"
     }
   },
   "terraform": {

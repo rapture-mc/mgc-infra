@@ -1,12 +1,12 @@
 {vars, ...}: {
   terraform.required_providers.libvirt.source = "dmacvicar/libvirt";
 
-  provider.libvirt.uri = "qemu+ssh://controller@${vars.networking.hostsAddr.MGC-DRW-HVS01.ipv4}/system";
+  provider.libvirt.uri = "qemu:///system";
 
   module = {
-    headscale-server = {
+    vpn-server = {
       source = "${vars.moduleSource}";
-      vm_hostname_prefix = "MGC-DRW-HDS";
+      vm_hostname_prefix = "MGC-DRW-VPN";
       autostart = true;
       vm_count = 1;
       memory = "4096";
