@@ -12,6 +12,7 @@
     inherit system;
     modules = [
       (import ./vms/MGC-DRW-NXC01.nix {inherit vars;})
+      (import ./vms/MGC-DRW-FBR01.nix {inherit vars;})
     ];
   };
 in {
