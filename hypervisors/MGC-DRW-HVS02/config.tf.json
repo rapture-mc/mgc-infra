@@ -22,6 +22,19 @@
       "vm_count": 1,
       "vm_hostname_prefix": "MGC-DRW-SEM"
     },
+    "windows-client": {
+      "autostart": true,
+      "bridge": "br0",
+      "dhcp": true,
+      "memory": "4096",
+      "os_img_url": "/var/lib/libvirt/images/win11.qcow2",
+      "source": "git::https://github.com/rapture-mc/terraform-libvirt-module.git?ref=40acff807a0ffb1c0da741774c37ebeda90730b7",
+      "system_volume": 300,
+      "uefi_enabled": false,
+      "vcpu": 2,
+      "vm_count": 1,
+      "vm_hostname_prefix": "MGC-DRW-WIN"
+    },
     "windows-server": {
       "autostart": true,
       "bridge": "br0",
