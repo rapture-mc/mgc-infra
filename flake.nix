@@ -2,7 +2,7 @@
   description = "MGC NixOS Infrastructure";
 
   inputs = {
-    megacorp.url = "git+https://github.com/rapture-mc/nixos-module";
+    megacorp.url = "github:rapture-mc/nixos-module";
     nixpkgs.follows = "megacorp/nixpkgs";
 
     terranix = {
@@ -34,7 +34,7 @@
       };
   in {
     # Nix commands to create/destroy Terraform infrastructure
-    # Run with "nix run .#<machine-name>-apply"
+    # Run with "nix run .#<hypervisor-name>-apply"
     apps.${system} = import ./hypervisors {inherit importTerraformConfig;};
 
     # For generating NixOS QCOW EFI images for use with terraform + libvirt
@@ -45,9 +45,27 @@
       modules = [
         megacorp.nixosModules.default
         {
-          megacorp.config = {
-            users.admin-user = "benny";
-            bootloader.enable = false;
+          networking.hostName = "nixos";
+
+          system.stateVersion = "24.11";
+
+          megacorp = {
+            config = {
+              system.enable = true;
+              bootloader.enable = false;  # nixos-generator will handle bootloader configuration instead
+
+              openssh = {
+                enable = true;
+                authorized-ssh-keys = [
+                  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOzlYmoWjZYFeCNdMBCHBXmqpzK1IBmRiB3hNlsgEtre benny@MGC-DRW-BST01"
+                ];
+              };
+
+              users = {
+                enable = true;
+                admin-user = "benny";
+              };
+            };
           };
         }
       ];

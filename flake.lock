@@ -55,6 +55,27 @@
         "type": "github"
       }
     },
+    "comin": {
+      "inputs": {
+        "nixpkgs": [
+          "megacorp",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1738872933,
+        "narHash": "sha256-6JXcU1YPKqDu9SzRTRU1qym+xZuZr6zqDq97YwZX7tg=",
+        "owner": "nlewo",
+        "repo": "comin",
+        "rev": "fc4a395f2181b8f271087ff0e3938d99973d1122",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nlewo",
+        "repo": "comin",
+        "type": "github"
+      }
+    },
     "devshell": {
       "inputs": {
         "nixpkgs": [
@@ -320,22 +341,23 @@
     "megacorp": {
       "inputs": {
         "arion": "arion",
+        "comin": "comin",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1736477790,
-        "narHash": "sha256-Nrq+gV2UznXaHj1CPg7USiBIa4beh5DjX645K+r2FgQ=",
-        "ref": "refs/heads/main",
-        "rev": "cce38d77e79c2fb6770d1902a188d68a9faba1b3",
-        "revCount": 59,
-        "type": "git",
-        "url": "https://github.com/rapture-mc/nixos-module"
+        "lastModified": 1739583445,
+        "narHash": "sha256-EOPGo8KwzejprMkXQuR+7rR836QeLQSzTIdygoXqt+U=",
+        "owner": "rapture-mc",
+        "repo": "nixos-module",
+        "rev": "4556bd604d9eb0a66af361765d402baab73b58d0",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "https://github.com/rapture-mc/nixos-module"
+        "owner": "rapture-mc",
+        "repo": "nixos-module",
+        "type": "github"
       }
     },
     "nix-darwin": {
