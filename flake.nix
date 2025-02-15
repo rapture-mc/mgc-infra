@@ -2,7 +2,7 @@
   description = "MGC NixOS Infrastructure";
 
   inputs = {
-    megacorp.url = "github:rapture-mc/nixos-module";
+    megacorp.url = "github:rapture-mc/nixos-module?ref=unstable";
     nixpkgs.follows = "megacorp/nixpkgs";
 
     terranix = {
