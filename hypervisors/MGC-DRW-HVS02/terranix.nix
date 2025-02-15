@@ -15,7 +15,7 @@
       (import ./vms/MGC-DRW-SEM01.nix {inherit vars;})
       (import ./vms/MGC-DRW-DMC01.nix {inherit vars;})
       (import ./vms/MGC-DRW-WIN01.nix {inherit vars;})
-      (import ./vms/MGC-DRW-ZBX01.nix {inherit vars;})
+      # (import ./vms/MGC-DRW-ZBX01.nix {inherit vars;})
     ];
   };
 in {
