@@ -47,8 +47,6 @@
         {
           networking.hostName = "nixos";
 
-          system.stateVersion = "24.11";
-
           megacorp = {
             config = {
               system.enable = true;
